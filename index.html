@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Shake - Hesap Silme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #8B4513;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .content {
+            padding: 0 20px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #8B4513;
+        }
+        
+        .section h2 {
+            color: #8B4513;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #f39c12;
+        }
+        
+        .danger {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #dc3545;
+        }
+        
+        .method {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .method-title {
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .email-link {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .email-link:hover {
+            background: #0056b3;
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid #eee;
+            margin-top: 40px;
+            color: #666;
+        }
+        
+        .contact-info {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .logo {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">☕ Brew & Shake 🍸</div>
+            <div class="subtitle">Kahve & Kokteyl Uygulaması - Hesap Silme</div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📱 Hesap Silme Talebi</h2>
+                <p>Brew & Shake uygulaması kullanıcıları olarak, hesabınızı ve tüm kişisel verilerinizi silme hakkınız bulunmaktadır.</p>
+            </div>
+            
+            <div class="section">
+                <h2>🔧 Hesap Nasıl Silinir?</h2>
+                
+                <div class="method">
+                    <div class="method-title">1️⃣ Uygulama İçinden (Önerilen)</div>
+                    <ol>
+                        <li>Brew & Shake uygulamasını açın</li>
+                        <li>Sağ alt köşedeki <strong>Profil</strong> ikonuna tıklayın</li>
+                        <li><strong>Ayarlar</strong> → <strong>Hesabım</strong> bölümüne gidin</li>
+                        <li><strong>"Hesabımı Sil"</strong> butonuna tıklayın</li>
+                        <li>Güvenlik için şifrenizi girin</li>
+                        <li>İşlemi onaylayın</li>
+                    </ol>
+                    <p><strong>✅ Hesabınız anında silinir</strong></p>
+                </div>
+                
+                <div class="method">
+                    <div class="method-title">2️⃣ E-posta ile Talep</div>
+                    <p>Uygulamaya erişiminiz yoksa e-posta gönderebilirsiniz:</p>
+                    
+                    <div class="contact-info">
+                        <p><strong>📧 E-posta Adresi:</strong></p>
+                        <a href="mailto:brewandshake.support@gmail.com?subject=Hesap Silme Talebi&body=Merhaba,%0D%0A%0D%0AKayıtlı e-posta adresim: [E-POSTA ADRESİNİZ]%0D%0AHesabımın silinmesini talep ediyorum.%0D%0A%0D%0ATeşekkürler." class="email-link">
+                            brewandshake.support@gmail.com
+                        </a>
+                        
+                        <p style="margin-top: 15px;"><strong>Konu:</strong> "Hesap Silme Talebi"</p>
+                        <p><strong>İçerik:</strong> Kayıtlı e-posta adresinizi belirtin</p>
+                        <p><strong>⏱️ Yanıt Süresi:</strong> 72 saat içinde</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="danger">
+                <h3>⚠️ ÖNEMLİ UYARI</h3>
+                <p><strong>Hesap silme işlemi KALICI'dır ve GERİ ALINAMAZ!</strong></p>
+                <p>Hesabınız silindikten sonra:</p>
+                <ul>
+                    <li>Tüm tarifleriniz silinir</li>
+                    <li>Profil bilgileriniz kaldırılır</li>
+                    <li>Etkinlik geçmişiniz silinir</li>
+                    <li>Bu işlem geri alınamaz</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🗂️ Hangi Veriler Silinir?</h2>
+                <ul>
+                    <li><strong>👤 Kişisel Bilgiler:</strong> Ad, soyad, e-posta, doğum tarihi</li>
+                    <li><strong>📸 Profil:</strong> Profil fotoğrafı, biyografi, sosyal medya bağlantıları</li>
+                    <li><strong>📝 Tarifler:</strong> Oluşturduğunuz tüm tariflerin fotoğrafları</li>
+                    <li><strong>📍 Etkinlikler:</strong> Katıldığınız ve oluşturduğunuz etkinlikler</li>
+                    <li><strong>💬 Etkileşimler:</strong> Beğeniler, yorumlar, takip listeleri</li>
+                    <li><strong>🔔 Bildirimler:</strong> Bildirim ayarları ve geçmişi</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>⏱️ Silme Süreleri</h2>
+                <ul>
+                    <li><strong>Uygulama içi:</strong> Anında silinir</li>
+                    <li><strong>E-posta talebi:</strong> 72 saat içinde</li>
+                    <li><strong>Sunucularımızdan:</strong> 30 gün içinde tamamen kaldırılır</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>📞 Yardım ve Destek</h2>
+                <p>Hesap silme konusunda sorularınız varsa:</p>
+                <div class="contact-info">
+                    <p><strong>📧 E-posta:</strong> brewandshake.support@gmail.com</p>
+                    <p><strong>📱 Uygulama:</strong> Ayarlar → Destek</p>
+                    <p><strong>⏰ Çalışma Saatleri:</strong> 7/24 destek</p>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <h3>🔒 Gizlilik ve Güvenlik</h3>
+                <p>Bu işlemler KVKK ve GDPR uyumlu olarak gerçekleştirilir. Verileriniz güvenle silinir ve üçüncü taraflarla paylaşılmaz.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Brew & Shake - Kahve & Kokteyl Uygulaması</p>
+            <p><strong>Geliştirici:</strong> HaBuCo</p>
+            <p>Son güncelleme: 30 Temmuz 2025</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                <em>Bu sayfa Google Play Store veri güvenliği gereksinimleri doğrultusunda hazırlanmıştır.</em>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
